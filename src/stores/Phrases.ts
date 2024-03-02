@@ -11,7 +11,7 @@ interface PhrasesState {
   setTextColor: (color: string) => void; 
 }
 
-export const usePhrasesStore = create<PhrasesState>((set, get) => {
+export const usePhrasesStore = create<PhrasesState>((set) => {
   return {
     phrases: [],
     currentPhrase: 0,
