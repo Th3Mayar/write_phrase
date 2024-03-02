@@ -1,52 +1,78 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Input from '../components/Input.astro';
+import Layout from "../layouts/Layout.astro";
+import Input from "../components/Input";
+import { textos } from "../../api/data";
 ---
 
 <Layout title="Write Phrase">
-	<main>
-		<h1>Game <span >Write Phrase</span></h1>
-		<p class="instructions">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugit repellat ullam corporis impedit neque dignissimos animi sapiente recusandae autem. Dolorum eveniet nobis et voluptatem nisi culpa cumque aperiam accusamus!
-		</p>
-		<Input title=''/>
-	</main>
+  <main>
+    <img src="/Game Write PNG.svg" alt="Game Write PNG" />
+    <h1>Game <span>Write Phrase</span></h1>
+    <div class="content">
+      <p class="instructions">
+        {textos.map((texto, index) => <span>{texto.texto}</span>)}
+      </p>
+    </div>
+    <Input />
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		color: rgb(0, 0, 0);
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background-image: linear-gradient(45deg, #f3ec78 90%, transparent 10%);		
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	span{
-		color: #f3ec78;
-	}
+  .content {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  main {
+    margin: auto;
+    padding: 1rem;
+
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    text-align: justify;
+    color: rgb(0, 0, 0);
+    margin-bottom: 2rem;
+    border: 1px solid rgba(var(--accent-light), 25%);
+    background: rgba(var(--accent-light), 25%);
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  span {
+    color: #f3ec78;
+  }
+  img {
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	opacity: 0.2;
+  }
 </style>
