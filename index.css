@@ -30,6 +30,7 @@ input {
 
 input:focus {
   background-position: 0;
+  /**/
 }
 
 input {
