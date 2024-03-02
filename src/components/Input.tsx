@@ -1,40 +1,31 @@
 import React from "react";
-import { textos } from "../../api/data";
+import "../../api/data.json";
 import { useState } from "react";
 import "../../index.css";
 
 const Input = () => {
-  const [text, setText] = useState("Hola");
+  const [text, setText] = useState([]);
 
-  console.log(textos[0])
-  
-  const validatePhrase = (phrase) => {
-    if (phrase === textos[0].text) {
-      alert("Correcto");
-    } else {
-      alert("Incorrecto");
-    }
-  };
-
-  function handleChange(event) {
-    console.log(event.target.value);
-    setText(event.target.value);
+  function handleChange(e) {
+    console.log(text);
+    console.log(e.target.value);
+    setText(e.target.value);
   }
 
-  return (
-    <div>
-      <li className="link-input">
-        <label htmlFor="Whrite phrase">
-          <h2>Whrite Phrase</h2>
-          <input
-            type="text"
-            onChange={(e) => validatePhrase(e.target.value)}
-            placeholder="Digite sin equivocarse la frase que le aparezca 👆"
-          />
-        </label>
-      </li>
-    </div>
-  );
+return (
+    <section>
+        <li className="link-input">
+            <label htmlFor="Whrite phrase">
+                <h2>Whrite Phrase</h2>
+                <input
+                    type="text"
+                    onChange={e => handleChange(e.target.value)}
+                    placeholder="Digite sin equivocarse la frase que le aparezca 👆"
+                />
+            </label>
+        </li>
+    </section>
+);
 };
 
 export default Input;
