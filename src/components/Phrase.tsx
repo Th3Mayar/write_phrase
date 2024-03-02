@@ -30,7 +30,7 @@ const Phrase = () => {
 
     const allCorrect = newTypedLetters.every((letterObj) => letterObj.correct);
     if (allCorrect) {
-      setTextColor("#f3ec78");
+      setTextColor("#ffff");
     }
   };
 
@@ -41,7 +41,7 @@ const Phrase = () => {
           phrases[0].texto.split("").map((letter, index) => (
             <span
               key={index}
-              style={{ color: typedLetters[index]?.correct ? "#f3ec78" : "white" }}
+              style={{ color: typedLetters[index]?.correct ? "white" : "#f3ec78" }}
             >
               {letter}
             </span>
