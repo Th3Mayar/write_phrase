@@ -1,32 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { usePhrasesStore } from "../stores/Phrases";
 
 const Phrase = () => {
   const fetchPhrases = usePhrasesStore((state) => state.fetchPhrases);
   const phrases = usePhrasesStore((state) => state.phrases);
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    fetchPhrases(5)
-  };
+  
+  useEffect(() => {
+    fetchPhrases(5);
+  }, []); 
+  
+  useEffect(() => {
+    window.addEventListener("load", () => {
+      console.log("La página ha cargado");
+    });
+  }, []); 
+  
   return (
-    <>
+    <div>
       <p className="instructions">
         {phrases.map((phrase, index) => (
           <p key={index}>{phrase.texto}</p>
         ))}
       </p>
-    <section>
+      <section>
         <li className="link-input">
-            <label htmlFor="Write phrase">
-                <h2>Write Phrase</h2>
-                <input
-                    type="text"
-                    onChange={(e) => handleChange(e)}
-                    placeholder="Type the phrase without making a mistake 👆"
-                />
-            </label>
+          <label htmlFor="Write phrase">
+            <h2>Write Phrase</h2>
+            <input
+              type="text"
+              placeholder="Type the phrase without making a mistake 👆"
+            />
+          </label>
         </li>
-    </section>
-    </>
+      </section>
+    </div>
   );
 };
 
