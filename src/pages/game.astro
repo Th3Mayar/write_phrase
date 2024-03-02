@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Input from "../components/Input";
 import Phrase from "../components/Phrase";
 import "../../index.css";
 ---
@@ -10,8 +9,7 @@ import "../../index.css";
     <img class="logoGame" src="/Game Write PNG.svg" alt="Game Write" />
     <h1>Game <span>Write Phrase</span></h1>
     <div class="content">
-      <Phrase />
+      <Phrase client:load/>
     </div>
-    <Input />
   </main>
 </Layout>

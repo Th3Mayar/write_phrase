@@ -1,16 +1,32 @@
 import React from "react";
-import "../../api/data.json";
-import Input from "./Input";
-import "../../index.css";
 import { usePhrasesStore } from "../stores/Phrases";
 
 const Phrase = () => {
-    const phrases = usePhrasesStore((state) => state.phrases);
-   
+  const fetchPhrases = usePhrasesStore((state) => state.fetchPhrases);
+  const phrases = usePhrasesStore((state) => state.phrases);
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    fetchPhrases(5)
+  };
   return (
-    <p className="instructions">
-      <span></span>
-    </p>
+    <>
+      <p className="instructions">
+        {phrases.map((phrase, index) => (
+          <p key={index}>{phrase.texto}</p>
+        ))}
+      </p>
+    <section>
+        <li className="link-input">
+            <label htmlFor="Write phrase">
+                <h2>Write Phrase</h2>
+                <input
+                    type="text"
+                    onChange={(e) => handleChange(e)}
+                    placeholder="Type the phrase without making a mistake 👆"
+                />
+            </label>
+        </li>
+    </section>
+    </>
   );
 };
 
