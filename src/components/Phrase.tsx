@@ -19,9 +19,9 @@ const Phrase = () => {
     fetchData();
   }, []);
 
-  const handleChange = (e) => {
+  const handleChange = (e: { target: { value: any; }; }) => {
     const inputValue = e.target.value;
-    const newTypedLetters = inputValue.split("").map((letter, index) => ({
+    const newTypedLetters = inputValue.split("").map((letter: string, index: string | number) => ({
       letter,
       correct: letter === phrases[0].texto[index],
     }));
