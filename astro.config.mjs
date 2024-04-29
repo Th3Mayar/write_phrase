@@ -10,3 +10,15 @@ export default defineConfig({
   output: "server",
   adapter: vercel()
 });
+
+// Path: astro.config.mjs
+// Compare this snippet from tailwind.config.mjs:
+// /** @type {import('tailwindcss').Config} */
+// export default {
+// 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+// 	theme: {
+// 		extend: {},
+// 	},
+// 	plugins: [],
+// 	presets: [],
+// }
