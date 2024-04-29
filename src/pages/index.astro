@@ -3,25 +3,21 @@ import Layout from "../layouts/Layout.astro";
 import "../../index.css";
 ---
 
-<Layout title="Write Phrase Start">
-  <main>
-    <img class="logo" src="/Game Write PNG.svg" alt="Game Write" />
-    <h1>Game <span>Write Phrase</span></h1>
-    <button type="submit" id="startButton" class="start-button">
-      <img class="play" src="/play.svg" alt="Play" />
-    </button>
+<Layout title="Write Phrase">
+  <main class="grid p-5">
+    <section class="m-2">
+      <img class="logo" src="/Game Write PNG.svg" alt="Game Write" />
+      <h1>Game <span>Write Phrase</span></h1>
+    </section>
+    <section class="m-5">
+      <button type="submit" id="startButton" class="start-button">
+        <img class="play" src="/play.svg" alt="Play" />
+      </button>
+    </section>
   </main>
 
   <script>
-    const handleClick = () => {
-      const startButton = document.getElementById("startButton");
-      startButton.addEventListener("click", () => {
-        window.location.href = "/game";
-      });
-    };
-    
-    window.onload = () => {
-      handleClick();
-    };
+    import { handleClick } from "../components/startButton.js";
+    window.onload = handleClick;
   </script>
 </Layout>
