@@ -1,32 +1,46 @@
-# Astro Starter Kit: Basics
+# Game Write Phrase 
+
+<p style="text-align:center;">Project create by <b>(Th3Mayar)</b></p>
+
+![Game Write Phrase Logo](./public/GameWritePNG.svg)
+
+Game Write Phrase es un juego divertido que desafía tus habilidades de escritura. Escribe la frase mostrada lo más rápido y preciso posible para ganar puntos y desbloquear nuevos niveles.
+
+## 🚀 Cómo Empezar
+
+Puedes comenzar clonando este repositorio y luego instalando las dependencias con el siguiente comando:
 
 ```sh
-npm create astro@latest -- --template basics
+npm install
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
+## 📂 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
 
 ```text
 /
 ├── public/
+│   └── library
+│   │     └── timerMin.js
 │   └── favicon.svg
+│   └── GameWrite.svg
+│   └── GameWritePNG.svg
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   └── Footer.astro
+│   │   └── Phrase.tsx
+│   │   └── startButton.js
+│   │   └── TimerGame.tsx
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
+│       └── game.astro
 │       └── index.astro
+│   └── stores/
+│       └── Phrase.ts
+│   └── types/
+│       └── types.d.ts
 └── package.json
 ```
 
@@ -52,3 +66,5 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+2024 Write Phrase Game By Th3Mayar. Open Source
