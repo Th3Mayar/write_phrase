@@ -56,7 +56,7 @@ const Phrase = () => {
     <>
     {/* <TimerGame /> */}
       <div>
-        <p className="instructions" style={{ color: phrase.textColor }}>
+        <p className="instructions select-none" style={{ color: phrase.textColor }}>
           {phrases.length > 0 &&
             phrases[0]?.texto.split("").map((letter, index) => (
               <span

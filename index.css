@@ -140,3 +140,7 @@ span {
   color: #f3ec78;
   width: 30px;
 }
+
+.user-select-none {
+  user-select: none;
+}
