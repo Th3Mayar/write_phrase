@@ -114,10 +114,10 @@ span {
   background-color: #f3ec78;
   border: 8px solid #492800;
   color: #ffffff;
-  width: 210px;
-  height: 200px;
-  border-radius: 50%;
-  display: flex;
+  width: 205px;
+  height: 110px;
+  border-radius: 40%;
+  display: grid;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -125,6 +125,7 @@ span {
   transition: border-color 2s;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
 }
 
 .icon {
@@ -137,5 +138,5 @@ span {
 
 .play {
   color: #f3ec78;
-  width: 70px;
+  width: 30px;
 }
