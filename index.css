@@ -1,6 +1,6 @@
 .link-input {
   list-style: none;
-  padding: 50px;
+  padding: 20px;
   background-color: hsl(222, 13%, 16%);
   background-image: none;
   background-size: 400%;
@@ -8,55 +8,20 @@
   background-position: 100%;
   transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  background-color: #23262d;
-  color: #000000;
-  border: 1px solid #fff;
-  align-items: center;
-  border-radius: 7px;
-  font-size: 1.5em;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  background-image: linear-gradient(45deg, #f3ec78 50%, transparent 50%);
-  background-size: 180%;
-  background-position: 100%;
-  transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-input:focus {
-  background-position: 0;
-  /**/
-}
-
-input {
-  background-position: 0;
-}
-
-input {
-  transition: background-size 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.content {
-  width: 100%;
-  margin: auto;
-  padding: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin-top: 20px;
 }
 
 main {
+  width: 100%;
   margin: auto;
   padding: 1rem;
   max-width: calc(100% - 2rem);
   color: white;
   font-size: 20px;
-  line-height: 1.6;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 h1 {
@@ -64,7 +29,6 @@ h1 {
   font-weight: 700;
   line-height: 1;
   text-align: center;
-  margin-bottom: 3em;
 }
 
 .text-gradient {
@@ -78,25 +42,18 @@ h1 {
 
 .instructions {
   text-align: justify;
-  margin-bottom: 2rem;
   border: 1px solid rgba(var(--accent-light), 25%);
   background: rgba(var(--accent-light), 25%);
   padding: 1.5rem;
   border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 span {
   color: #f3ec78;
-}
-
-.logo {
-  width: 20%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
 }
 
 .logoGame {
@@ -114,18 +71,25 @@ span {
   background-color: #f3ec78;
   border: 8px solid #492800;
   color: #ffffff;
-  width: 205px;
-  height: 110px;
-  border-radius: 40%;
-  display: grid;
+  width: 200px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  outline: none;
   transition: border-color 2s;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
+  -webkit-transition: border-color 2s;
+  -moz-transition: border-color 2s;
+  -ms-transition: border-color 2s;
+  -o-transition: border-color 2s;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .icon {
@@ -143,4 +107,65 @@ span {
 
 .user-select-none {
   user-select: none;
+}
+
+textarea {
+  border-radius: 8px;
+  height: 100px;
+  width: 100%;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  border: 1px solid rgb(219, 213, 213);
+  color: #492800;
+}
+
+/* Effects */
+
+@keyframes neon-border {
+  0%, 100% {
+    border-color: #f3ec78;
+    box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgba(243, 239, 25, 0.8), 0 0 20px rgba(252, 228, 13, 0.8), 0 0 40px #f3ec78;
+  }
+  50% {
+    border-color: rgba(0, 255, 255, 0.8);
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.8), 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 255, 0.8);
+  }
+}
+
+.neon-border {
+  border: 4px solid;
+  border-radius: 12px;
+  animation: neon-border 2s infinite alternate;
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .start-button {
+    width: 150px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 352px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2{
+    font-size: medium;
+  }
+  p{
+    font-size: 1rem;
+  }
+  .start-button {
+    width: 150px;
+    height: 100px;
+  }
+  textarea {
+    font-size: small;
+  }
+
 }

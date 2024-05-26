@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { usePhrasesStore } from "../stores/Phrases";
 import JSConfetti from 'js-confetti';
+import TextareaAutosize from '@mui/material/TextareaAutosize';
 // import TimerGame from "./TimerGame";
 
 const Phrase = () => {
@@ -71,10 +72,12 @@ const Phrase = () => {
           <li className="link-input">
             <label htmlFor="Write phrase">
               <h2>Write Phrase</h2>
-              <input
-                onChange={handleChange}
-                type="text"
+              <TextareaAutosize
+                name="write-phrase"
                 placeholder="Type the phrase without making a mistake 👆"
+                variant="outline"
+                onChange={handleChange}
+                className="w-full p-2 border border-gray-300 rounded-md"
               />
             </label>
           </li>
