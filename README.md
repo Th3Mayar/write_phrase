@@ -4,11 +4,11 @@
 
 ![Game Write Phrase Logo](./public/GameWritePNG.svg)
 
-Game Write Phrase es un juego divertido que desafía tus habilidades de escritura. Escribe la frase mostrada lo más rápido y preciso posible para ganar puntos y desbloquear nuevos niveles.
+Game Write Phrase is a fun game that challenges your writing skills. Write the displayed phrase as quickly and accurately as possible to earn points and unlock new levels.
 
-## 🚀 Cómo Empezar
+## 🚀 How to start?
 
-Puedes comenzar clonando este repositorio y luego instalando las dependencias con el siguiente comando:
+You can start by cloning this repository and then installing the dependencies with the following command:
 
 ```sh
 npm install
