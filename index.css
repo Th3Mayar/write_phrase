@@ -109,6 +109,9 @@ textarea {
   background-color: #464352;
 }
 
+.title-game{
+  margin-bottom: 10px !important;
+}
 /* Effects */
 
 @keyframes neon-border {

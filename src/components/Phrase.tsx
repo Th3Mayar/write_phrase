@@ -71,7 +71,7 @@ const Phrase = () => {
         <section>
           <li className="link-input">
             <label htmlFor="Write phrase">
-              <h2>Write Phrase</h2>
+              <h2 className="title-game">Write Phrase</h2>
               <TextareaAutosize
                 name="write-phrase"
                 placeholder="Type the phrase without making a mistake 👆"
