@@ -183,3 +183,10 @@ textarea {
   }
 
 }
+
+@media (max-width: 372){
+  .title-autor{
+    flex-direction: column;
+    font-size: small;
+  }
+}
