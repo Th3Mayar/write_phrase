@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import type { Tema } from "../types/types";
-import { questionPlay } from "../../api/data";
+import { questionPlay } from "../../api/data.ts";
+// import { wordPlay } from "../../api/word.ts";
 
 interface PhrasesState {
   texto: string | TrustedHTML;

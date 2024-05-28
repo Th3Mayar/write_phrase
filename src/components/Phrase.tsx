@@ -5,7 +5,6 @@ import TextareaAutosize from '@mui/material/TextareaAutosize';
 // import TimerGame from "./TimerGame";
 
 const Phrase = () => {
-  
   const fetchPhrases = usePhrasesStore((state) => state.fetchPhrases);
   const phrases = usePhrasesStore((state) => state.phrases);
   const setTextColor = usePhrasesStore((state) => state.setTextColor);
@@ -45,7 +44,7 @@ const Phrase = () => {
           fetchPhrases(1);
           e.target.value = "";
           usePhrasesStore.setState({ typedLetters: [] });
-        }, 3000);
+        }, 1000);
 
       }
     } else {
@@ -77,7 +76,7 @@ const Phrase = () => {
                 placeholder="Type the phrase without making a mistake 👆"
                 variant="outline"
                 onChange={handleChange}
-                className="w-full p-2 border border-gray-300 rounded-md"
+                className="w-full p-2 border border-gray-300 rounded-md text-center"
               />
             </label>
           </li>
