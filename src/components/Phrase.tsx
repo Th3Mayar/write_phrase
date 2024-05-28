@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { usePhrasesStore } from "../stores/Phrases";
-import JSConfetti from 'js-confetti';
-import TextareaAutosize from '@mui/material/TextareaAutosize';
+import JSConfetti from "js-confetti";
+import TextareaAutosize from "@mui/material/TextareaAutosize";
 // import TimerGame from "./TimerGame";
 
 const Phrase = () => {
@@ -22,7 +22,7 @@ const Phrase = () => {
     fetchData();
   }, []);
 
-  const handleChange = (e: { target: { value: string; }; }) => {
+  const handleChange = (e: { target: { value: string } }) => {
     const inputValue = e.target.value;
     const newTypedLetters = inputValue.split("").map((letter, index) => ({
       letter,
@@ -36,16 +36,15 @@ const Phrase = () => {
     if (allCorrect) {
       setTextColor("#ffff");
 
-      const jsConfetti = new JSConfetti()
+      const jsConfetti = new JSConfetti();
 
       if (inputValue.length === phrases[0]?.texto.length) {
-        jsConfetti.addConfetti()
+        jsConfetti.addConfetti();
         setTimeout(() => {
           fetchPhrases(1);
           e.target.value = "";
           usePhrasesStore.setState({ typedLetters: [] });
         }, 1000);
-
       }
     } else {
       setTextColor("");
@@ -54,14 +53,28 @@ const Phrase = () => {
 
   return (
     <>
-    {/* <TimerGame /> */}
+      {/* <TimerGame /> */}
       <div>
-        <p className="instructions select-none" style={{ color: phrase.textColor }}>
+        <p className="contentAutor">
+          <span className="title-autor">Autor phrase: </span>
+          {phrases.length > 0 &&
+            phrases[0]?.autor.split("").map((letter, index) => (
+              <span className="author" key={index}>
+                {letter}
+              </span>
+            ))}
+        </p>
+        <p
+          className="instructions select-none"
+          style={{ color: phrase.textColor }}
+        >
           {phrases.length > 0 &&
             phrases[0]?.texto.split("").map((letter, index) => (
               <span
                 key={index}
-                style={{ color: typedLetters[index]?.correct ? "white" : "#f3ec78" }}
+                style={{
+                  color: typedLetters[index]?.correct ? "white" : "#f3ec78",
+                }}
               >
                 {letter}
               </span>
@@ -81,9 +94,8 @@ const Phrase = () => {
             </label>
           </li>
         </section>
-    </div>
+      </div>
     </>
-
   );
 };
 

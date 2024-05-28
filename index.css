@@ -113,6 +113,27 @@ textarea {
 .title-game{
   margin-bottom: 10px !important;
 }
+
+.title-autor{
+  color:rgb(230, 196, 196);
+}
+
+.author{
+  color:rgba(191, 194, 194, 0.8);
+}
+
+.contentAutor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 20px;
+}
+
+.title-autor{
+  padding-right: 10px;
+}
+
 /* Effects */
 
 @keyframes neon-border {
