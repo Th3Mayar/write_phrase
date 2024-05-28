@@ -280,4 +280,452 @@ export const questionPlay = [
     nombre: "Refrán",
     textColor: "white",
   },
+  {
+    id: 41,
+    texto: "No hay camino para la paz, la paz es el camino.",
+    autor: "Mahatma Gandhi",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 42,
+    texto: "El éxito es la suma de pequeños esfuerzos repetidos día tras día.",
+    autor: "Robert Collier",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 43,
+    texto:
+      "La vida no se trata de encontrarte a ti mismo, sino de crearte a ti mismo.",
+    autor: "George Bernard Shaw",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 44,
+    texto: "No cuentes los días, haz que los días cuenten.",
+    autor: "Muhammad Ali",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 45,
+    texto:
+      "La vida es lo que pasa mientras estás ocupado haciendo otros planes.",
+    autor: "John Lennon",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 46,
+    texto: "La única forma de hacer un gran trabajo es amar lo que haces.",
+    autor: "Steve Jobs",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 47,
+    texto:
+      "El único límite a nuestros logros de mañana es nuestras dudas de hoy.",
+    autor: "Franklin D. Roosevelt",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 48,
+    texto:
+      "El mayor error que puedes cometer es el de no hacer nada porque solo puedes hacer un poco.",
+    autor: "Sydney Smith",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 49,
+    texto:
+      "El éxito no es la clave de la felicidad. La felicidad es la clave del éxito.",
+    autor: "Albert Schweitzer",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 50,
+    texto:
+      "No es lo que tienes, sino cómo usas lo que tienes lo que marca la diferencia.",
+    autor: "Zig Ziglar",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 51,
+    texto: "La imaginación es más importante que el conocimiento.",
+    autor: "Albert Einstein",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 52,
+    texto: "No podemos ayudar a todos, pero todos pueden ayudar a alguien.",
+    autor: "Ronald Reagan",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 53,
+    texto:
+      "La vida es realmente simple, pero insistimos en hacerla complicada.",
+    autor: "Confucio",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 54,
+    texto: "El único modo de hacer un gran trabajo es amar lo que haces.",
+    autor: "Steve Jobs",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 55,
+    texto: "El fracaso es éxito si aprendemos de él.",
+    autor: "Malcolm Forbes",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 56,
+    texto: "La vida es una aventura, atrévete.",
+    autor: "Teresa de Calcuta",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 57,
+    texto:
+      "La mayor gloria en la vida no consiste en no caer, sino en levantarnos cada vez que caemos.",
+    autor: "Nelson Mandela",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 58,
+    texto: "La vida es una obra de teatro que no permite ensayos.",
+    autor: "Charles Chaplin",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 59,
+    texto:
+      "El éxito no es la clave de la felicidad. La felicidad es la clave del éxito.",
+    autor: "Albert Schweitzer",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 60,
+    texto:
+      "El mejor momento para plantar un árbol fue hace veinte años. El segundo mejor momento es ahora.",
+    autor: "Proverbio chino",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 61,
+    texto: "Nunca es demasiado tarde para ser lo que podrías haber sido.",
+    autor: "George Eliot",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 62,
+    texto:
+      "La vida es un 10% lo que te ocurre y un 90% cómo reaccionas a ello.",
+    autor: "Charles R. Swindoll",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 63,
+    texto: "La verdadera sabiduría está en reconocer la propia ignorancia.",
+    autor: "Sócrates",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 64,
+    texto:
+      "El único límite a nuestros logros de mañana es nuestras dudas de hoy.",
+    autor: "Franklin D. Roosevelt",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 65,
+    texto: "El único modo de hacer un gran trabajo es amar lo que haces.",
+    autor: "Steve Jobs",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 66,
+    texto: "El fracaso es éxito si aprendemos de él.",
+    autor: "Malcolm Forbes",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 67,
+    texto: "La vida es una aventura, atrévete.",
+    autor: "Teresa de Calcuta",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 68,
+    texto:
+      "El mejor momento para plantar un árbol fue hace veinte años. El segundo mejor momento es ahora.",
+    autor: "Proverbio chino",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 69,
+    texto: "Nunca es demasiado tarde para ser lo que podrías haber sido.",
+    autor: "George Eliot",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 70,
+    texto:
+      "La vida es un 10% lo que te ocurre y un 90% cómo reaccionas a ello.",
+    autor: "Charles R. Swindoll",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 71,
+    texto: "No cuentes los días, haz que los días cuenten.",
+    autor: "Muhammad Ali",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 72,
+    texto:
+      "El éxito no es la clave de la felicidad. La felicidad es la clave del éxito.",
+    autor: "Albert Schweitzer",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 73,
+    texto: "El conocimiento es poder.",
+    autor: "Francis Bacon",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 74,
+    texto: "La imaginación es más importante que el conocimiento.",
+    autor: "Albert Einstein",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 75,
+    texto: "El éxito es la suma de pequeños esfuerzos repetidos día tras día.",
+    autor: "Robert Collier",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 76,
+    texto:
+      "La vida no se trata de encontrarte a ti mismo, sino de crearte a ti mismo.",
+    autor: "George Bernard Shaw",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 77,
+    texto:
+      "El único límite a nuestros logros de mañana es nuestras dudas de hoy.",
+    autor: "Franklin D. Roosevelt",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 78,
+    texto:
+      "El mayor error que puedes cometer es el de no hacer nada porque solo puedes hacer un poco.",
+    autor: "Sydney Smith",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 79,
+    texto:
+      "La vida es realmente simple, pero insistimos en hacerla complicada.",
+    autor: "Confucio",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 80,
+    texto: "El único modo de hacer un gran trabajo es amar lo que haces.",
+    autor: "Steve Jobs",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 81,
+    texto: "El fracaso es éxito si aprendemos de él.",
+    autor: "Malcolm Forbes",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 82,
+    texto: "La vida es una aventura, atrévete.",
+    autor: "Teresa de Calcuta",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 83,
+    texto:
+      "La mayor gloria en la vida no consiste en no caer, sino en levantarnos cada vez que caemos.",
+    autor: "Nelson Mandela",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 84,
+    texto: "La vida es una obra de teatro que no permite ensayos.",
+    autor: "Charles Chaplin",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 85,
+    texto:
+      "El éxito no es la clave de la felicidad. La felicidad es la clave del éxito.",
+    autor: "Albert Schweitzer",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 86,
+    texto:
+      "El mejor momento para plantar un árbol fue hace veinte años. El segundo mejor momento es ahora.",
+    autor: "Proverbio chino",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 87,
+    texto: "Nunca es demasiado tarde para ser lo que podrías haber sido.",
+    autor: "George Eliot",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 88,
+    texto:
+      "La vida es un 10% lo que te ocurre y un 90% cómo reaccionas a ello.",
+    autor: "Charles R. Swindoll",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 89,
+    texto: "No cuentes los días, haz que los días cuenten.",
+    autor: "Muhammad Ali",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 90,
+    texto:
+      "El éxito no es la clave de la felicidad. La felicidad es la clave del éxito.",
+    autor: "Albert Schweitzer",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 91,
+    texto: "El conocimiento es poder.",
+    autor: "Franc is Bacon",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 92,
+    texto: "La imaginación es más importante que el conocimiento.",
+    autor: "Albert Einstein",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 93,
+    texto: "El éxito es la suma de pequeños esfuerzos repetidos día tras día.",
+    autor: "Robert Collier",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 94,
+    texto:
+      "La vida no se trata de encontrarte a ti mismo, sino de crearte a ti mismo.",
+    autor: "George Bernard Shaw",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 95,
+    texto:
+      "El único límite a nuestros logros de mañana es nuestras dudas de hoy.",
+    autor: "Franklin D. Roosevelt",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 96,
+    texto:
+      "El mayor error que puedes cometer es el de no hacer nada porque solo puedes hacer un poco.",
+    autor: "Sydney Smith",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 97,
+    texto:
+      "La vida es realmente simple, pero insistimos en hacerla complicada.",
+    autor: "Confucio",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 98,
+    texto: "El único modo de hacer un gran trabajo es amar lo que haces.",
+    autor: "Steve Jobs",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 99,
+    texto: "El fracaso es éxito si aprendemos de él.",
+    autor: "Malcolm Forbes",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
+  {
+    id: 100,
+    texto: "La vida es una aventura, atrévete.",
+    autor: "Teresa de Calcuta",
+    nombre: "Frase célebre",
+    textColor: "white",
+  },
 ];
