@@ -1,0 +1,96 @@
+.timer {
+  text-align: right;
+  margin: 1.5rem 0;
+}
+
+.timer-label {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.timer-time {
+  font-size: 2.5rem;
+  font-family: monospace;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.yellow {
+  color: #f3ec78;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: hsl(222, 13%, 16%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+@keyframes slideDownFadeIn {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-content.loser {
+  animation: slideDownFadeIn 0.5s ease-out;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.modal-text {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-button {
+  background-color: #f3ec78;
+  color: rgb(0, 0, 0);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+}
+
+.modal-button:hover {
+  background-color: #f3ec78;
+  box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgba(243, 239, 25, 0.8),
+    0 0 20px rgba(252, 228, 13, 0.8), 0 0 40px #f3ec78;
+}
