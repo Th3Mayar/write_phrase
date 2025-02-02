@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { usePhrasesStore } from "../stores/Phrases";
 import JSConfetti from "js-confetti";
 import TextareaAutosize from "@mui/material/TextareaAutosize";
-// import TimerGame from "./TimerGame";
+import TimerGame from "./TimerGame";
 
 const Phrase = () => {
   const fetchPhrases = usePhrasesStore((state) => state.fetchPhrases);
@@ -22,9 +22,14 @@ const Phrase = () => {
     fetchData();
   }, []);
 
-  const handleChange = (e: { target: { value: string } }) => {
+  const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const inputValue = e.target.value;
-    const newTypedLetters = inputValue.split("").map((letter, index) => ({
+    interface TypedLetter {
+      letter: string;
+      correct: boolean;
+    }
+
+    const newTypedLetters: TypedLetter[] = inputValue.split("").map((letter: string, index: number): TypedLetter => ({
       letter,
       correct: letter === phrases[0]?.texto[index],
     }));
@@ -44,6 +49,7 @@ const Phrase = () => {
           fetchPhrases(1);
           e.target.value = "";
           usePhrasesStore.setState({ typedLetters: [] });
+          handlePhraseComplete(); 
         }, 1000);
       }
     } else {
@@ -51,9 +57,13 @@ const Phrase = () => {
     }
   };
 
+  const handlePhraseComplete = () => {
+    // Logic to increase time
+  };
+
   return (
     <>
-      {/* <TimerGame /> */}
+      <TimerGame completedWords={undefined} onPhraseComplete={handlePhraseComplete} />
       <div>
         <p className="contentAutor">
           <span className="title-autor">Autor phrase: </span>
